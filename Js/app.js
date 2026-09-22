@@ -4,7 +4,7 @@ const products = [
     {
         id: 1,
         name: "projecteur 12V 50W",
-        price: 29.00,
+        price: 28.00,
         category: "Electricité marine",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsldOeyrMsAkM_1BweFbJ8BXfzCbZ1PX7pfknk7v87_A&s=10",
@@ -18,7 +18,7 @@ const products = [
     {
         id: 2,
         name: "projecter 12V 10W",
-        price: 24.99,
+        price: 18.00,
         category: "Electricité marine",
         images: [
             "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwLCPZSakgiZ2b6CYCpAnZZrSKwGTL_l4Ju2FwdPpx8GNb_IH3",
@@ -30,7 +30,7 @@ const products = [
     {
         id: 3,
         name: "projecteur 24V 100W",
-        price: 99.99,
+        price: 135.00,
         category: "Electricité marine",
         images: [
             "https://scontent.fnbe1-2.fna.fbcdn.net/v/t39.30808-6/520817993_1267508388415436_312850989381678880_n.jpg?stp=dst-jpg_tt6&cstp=mx455x455&ctp=s206x206&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ad20&_nc_ohc=6xz9G_cHO6AQ7kNvwHZg9to&_nc_oc=AdpXfDGp5bML5eCs64v3Q4tiR9HjbxfB3TkrAjIi0kjthgDCB-tHyOQ6K2J3Yg28Cys&_nc_zt=23&_nc_ht=scontent.fnbe1-2.fna&_nc_gid=YzeuD0qiPe9NT9mCjYNGDQ&_nc_ss=7b2a8&oh=00_AQIsbb0Bb2scA16SAkBQWvPnyNBKBzwotydVNqxuLB6czg&oe=6AB5A69E",
@@ -42,7 +42,7 @@ const products = [
     {
         id: 4,
         name: "projecteur 24V 50W",
-        price: 29.99,
+        price: 70.00,
         category: "Electricité marine",
         images: [
             "https://scontent.fnbe1-2.fna.fbcdn.net/v/t39.30808-6/815631192_1614805013685770_2497280240060616526_n.jpg?stp=dst-jpg_tt6&cstp=mx542x395&ctp=s542x395&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=aUnEbJJQQ8EQ7kNvwF3vjFN&_nc_oc=AdrdxwqcI5j33dRMB8jq3oAwRnnzAzHS1znadav41gKiRlUGzR9aqM_T-BKJz2t11jY&_nc_zt=23&_nc_ht=scontent.fnbe1-2.fna&_nc_gid=-300gslUMzcB10ZLtG3eAQ&_nc_ss=7b2a8&oh=00_AQL_YHuVYsSg_8wXk5dIJAWXrd9cyhUA0bGy9aL2t_IZEA&oe=6AB5981E",
@@ -54,23 +54,22 @@ const products = [
     },
     {
         id: 5,
-        name: "lampe led 12V 18W",
-        price: 39.99,
+        name: "lampe led 12V 15W",
+        price: 8.00,
         category: "Electricité marine",
         images: [
             "https://i0.wp.com/sunuequipement.com/wp-content/uploads/2020/05/ampoule-led-e27-dimmable-big.jpg?fit=500%2C500&ssl=1"
         ],
         rating: 4.8,
         reviews: 210,
-        description: "Comprehensive guide to modern JavaScript programming for beginners and experts. Covers ES6+ features, async programming, and popular frameworks."
+        description: "Lampe LED 12V – 15W : Éclairage puissant et économique, idéale pour bateaux, véhicules et installations électriques 12V. Consommation réduite et longue durée de vie."
     },
     {
         id: 6,
         name: "Projecteur Solaire Portable",
-        price: 79.99,
+        price: 40.00,
         category: "outillage",
         images: [
-            "https://cheapshop.tn/wp-content/uploads/2024/07/PROJECTEUR-LED-SOLAIRE-PORTABLE-100W.jpg",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Xv_xUNdPMUZ4YDbeLn3sNH_8V0E8xnw2IRpK96Avwg&s=10",
             "https://ordex.tn/6585-large_default/projecteur-solaire-portable-100w.jpg",
         ],
@@ -81,7 +80,7 @@ const products = [
     {
         id: 7,
         name: "lampe led 24V 18W",
-        price: 199.99,
+        price: 20.00,
         category: "Electricité marine",
         images: [
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk2pgjAV6OVDCFB-k3ZnhUIM8V3seNURLl2n6425HBxqTy2-Fz",
@@ -90,7 +89,7 @@ const products = [
         ],
         rating: 4.4,
         reviews: 95,
-        description: "Track your fitness, receive notifications, and more with this feature-packed smartwatch. Includes heart rate monitoring, GPS, and 7-day battery life."
+        description: "Lampe LED 24V – 18W : Éclairage puissant et économique, idéale pour bateaux, véhicules et installations électriques 24V. Consommation réduite et longue durée de vie."
     },
     {
         id: 8,
@@ -104,21 +103,19 @@ const products = [
         rating: 4.3,
         reviews: 67,
         description: "Piège à souris performant pour une lutte efficace contre les nuisibles."
-    }/*,
+    },
     {
         id: 9,
-        name: "Men's Slim Fit Denim Jeans",
-        price: 49.99,
-        category: "clothing",
+        name: "lampe led 24V 15W",
+        price: 8.00,
+        category: "Electricité marine",
         images: [
-            "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-            "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-            "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+            "https://i0.wp.com/sunuequipement.com/wp-content/uploads/2020/05/ampoule-led-e27-dimmable-big.jpg?fit=500%2C500&ssl=1"
         ],
         rating: 4.6,
         reviews: 128,
-        description: "Classic blue denim jeans with stretch technology for maximum comfort."
-    },
+        description: "Lampe LED 24V – 15W : Éclairage puissant et économique, idéale pour bateaux, véhicules et installations électriques 24V. Consommation réduite et longue durée de vie."
+    }/*,
     {
         id: 10,
         name: "Women's Floral Summer Dress",
