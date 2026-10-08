@@ -79,7 +79,7 @@ const products = [
     },
     {
         id: 7,
-        name: "lampe led 24V 18W",
+        name: "lampe led 12V 20W",
         price: 20.00,
         category: "Electricité marine",
         images: [
