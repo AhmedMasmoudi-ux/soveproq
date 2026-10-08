@@ -33,7 +33,9 @@ const products = [
         price: 135.00,
         category: "Electricité marine",
         images: [
-            "https://scontent.fnbe1-2.fna.fbcdn.net/v/t39.30808-6/520817993_1267508388415436_312850989381678880_n.jpg?stp=dst-jpg_tt6&cstp=mx455x455&ctp=s206x206&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=50ad20&_nc_ohc=6xz9G_cHO6AQ7kNvwHZg9to&_nc_oc=AdpXfDGp5bML5eCs64v3Q4tiR9HjbxfB3TkrAjIi0kjthgDCB-tHyOQ6K2J3Yg28Cys&_nc_zt=23&_nc_ht=scontent.fnbe1-2.fna&_nc_gid=YzeuD0qiPe9NT9mCjYNGDQ&_nc_ss=7b2a8&oh=00_AQIsbb0Bb2scA16SAkBQWvPnyNBKBzwotydVNqxuLB6czg&oe=6AB5A69E",
+            
+            "pic/3P5J8puOQzhdR4495p8T9apTMuiMVOsTgH5beiSK.jpg",
+            "pic/images.jpg"
         ],
         rating: 4.0,
         reviews: 42,
@@ -45,7 +47,7 @@ const products = [
         price: 70.00,
         category: "Electricité marine",
         images: [
-            "https://scontent.fnbe1-2.fna.fbcdn.net/v/t39.30808-6/815631192_1614805013685770_2497280240060616526_n.jpg?stp=dst-jpg_tt6&cstp=mx542x395&ctp=s542x395&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=127cfc&_nc_ohc=aUnEbJJQQ8EQ7kNvwF3vjFN&_nc_oc=AdrdxwqcI5j33dRMB8jq3oAwRnnzAzHS1znadav41gKiRlUGzR9aqM_T-BKJz2t11jY&_nc_zt=23&_nc_ht=scontent.fnbe1-2.fna&_nc_gid=-300gslUMzcB10ZLtG3eAQ&_nc_ss=7b2a8&oh=00_AQL_YHuVYsSg_8wXk5dIJAWXrd9cyhUA0bGy9aL2t_IZEA&oe=6AB5981E",
+            "pic/Capture d'écran 2026-09-20 122120.png",
 
         ],
         rating: 4.7,
@@ -58,6 +60,8 @@ const products = [
         price: 8.00,
         category: "Electricité marine",
         images: [
+            "pic/41+fg5H8qtL._AC_UF1000,1000_QL80_FMwebp_.webp",
+            "pic/D_Q_NP_2X_782962-MLA116557392236_092026-P.webp",
             "https://i0.wp.com/sunuequipement.com/wp-content/uploads/2020/05/ampoule-led-e27-dimmable-big.jpg?fit=500%2C500&ssl=1"
         ],
         rating: 4.8,
@@ -83,13 +87,13 @@ const products = [
         price: 20.00,
         category: "Electricité marine",
         images: [
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk2pgjAV6OVDCFB-k3ZnhUIM8V3seNURLl2n6425HBxqTy2-Fz",
-            "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQC6XWDcRwzxk4SDKwts3DuOcjmZMi0waBzHSh4gBozden-leP1"
+            "pic/=_UTF-8_B_UkzigJE5MTFBLTIwLTEuanBn_=.jpg",
+            "pic/2.jpg"
 
         ],
         rating: 4.4,
         reviews: 95,
-        description: "Lampe LED 24V – 18W : Éclairage puissant et économique, idéale pour bateaux, véhicules et installations électriques 24V. Consommation réduite et longue durée de vie."
+        description: "Lampe LED 12V – 20W : Éclairage puissant et économique, idéale pour bateaux, véhicules et installations électriques 24V. Consommation réduite et longue durée de vie."
     },
     {
         id: 8,
@@ -110,40 +114,41 @@ const products = [
         price: 8.00,
         category: "Electricité marine",
         images: [
+            "pic/41+fg5H8qtL._AC_UF1000,1000_QL80_FMwebp_.webp",
+            "pic/D_Q_NP_2X_782962-MLA116557392236_092026-P.webp",
             "https://i0.wp.com/sunuequipement.com/wp-content/uploads/2020/05/ampoule-led-e27-dimmable-big.jpg?fit=500%2C500&ssl=1"
         ],
         rating: 4.6,
         reviews: 128,
         description: "Lampe LED 24V – 15W : Éclairage puissant et économique, idéale pour bateaux, véhicules et installations électriques 24V. Consommation réduite et longue durée de vie."
-    }/*,
+    },
     {
         id: 10,
-        name: "Women's Floral Summer Dress",
-        price: 39.99,
-        category: "clothing",
+        name: "lampe jaune 24v 40w",
+        price: 4.50,
+        category: "Electricité marine",
         images: [
-            "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-            "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-            "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+            "pic/anagorsel_1302 (1).jpg",
+            "pic/d327aab2ee2c74ca04fea7480d2b.jpg",
         ],
         rating: 4.8,
         reviews: 215,
-        description: "Lightweight floral dress perfect for summer outings and beach vacations."
+        description: "Lampe jaune 24V – 40W : Éclairage puissant et économique, idéale pour bateaux, véhicules et installations électriques 24V. Consommation réduite et longue durée de vie."
     },
     {
         id: 11,
-        name: "Unisex Cotton Hoodie",
-        price: 34.99,
-        category: "clothing",
+        name: "lampe 15 LED ",
+        price: 15.00,
+        category: "Electricité marine",
         images: [
-            "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-            "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-            "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+            "pic/51FSdUAuRrL.jpg",
+            "pic/71eeNiI3OJL._AC_UF1000,1000_QL80_.jpg",
+            "pic/D_NQ_NP_624162-MLB95514519592_102025-O-sinalizador-aquatico-pisca-p-redes-pesca--cor-vermelho.webp"
         ],
         rating: 4.5,
         reviews: 187,
-        description: "Comfortable oversized hoodie made from premium cotton blend."
-    },
+        description: "Lampe 15 LED : Éclairage puissant et économique, idéale pour bateaux, véhicules et installations électriques 24V. Consommation réduite et longue durée de vie."
+    }/*,
     {
         id: 12,
         name: "Men's Formal Suit Set",
