@@ -147,7 +147,7 @@ const products = [
         ],
         rating: 4.5,
         reviews: 187,
-        description: "Lampe 15 LED : Éclairage puissant et économique, idéale pour bateaux, véhicules et installations électriques 24V. Consommation réduite et longue durée de vie."
+        description: "Signal lumineux flottant rouge pour la pêche, idéal pour signaler et repérer les filets de pêche sur l’eau. Facile à utiliser, il améliore la visibilité grâce à son éclairage clignotant."
     }/*,
     {
         id: 12,
