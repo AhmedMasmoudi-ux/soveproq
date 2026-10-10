@@ -1,12 +1,11 @@
-# 🛒 EasyDeal – E-Commerce Website
+# 🛒 soveproq – E-Commerce Website
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://easydeal-01.netlify.app/)  
 
 
 
 ## 📖 Overview
 
-EasyDeal is a modern e-commerce landing page designed to showcase products effectively. Built using HTML, CSS, Tailwind CSS, and JavaScript, it offers a clean, user-friendly interface with smooth animations.  This project is ideal for presenting products and services with a visually appealing and engaging shopping experience.  The focus is on a strong visual presentation and ease of navigation for potential customers.
+SOVEPROQ is a modern e-commerce landing page designed to showcase products effectively. Built using HTML, CSS, Tailwind CSS, and JavaScript, it offers a clean, user-friendly interface with smooth animations.  This project is ideal for presenting products and services with a visually appealing and engaging shopping experience.  The focus is on a strong visual presentation and ease of navigation for potential customers.
 
 ## ✨ Features
 
@@ -60,7 +59,7 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 **⭐ Star this repo if you find it helpful!**
 
-Made with ❤️ by amdadislam01
+Made with ❤️ by ahmed masmoudi
 
 </div>
 
