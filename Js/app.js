@@ -125,7 +125,7 @@ const products = [
     {
         id: 10,
         name: "lampe jaune 24v 40w",
-        price: 4.50,
+        price: 4.00,
         category: "Electricité marine",
         images: [
             "pic/anagorsel_1302 (1).jpg",
@@ -138,7 +138,7 @@ const products = [
     {
         id: 11,
         name: "lampe 15 LED ",
-        price: 15.00,
+        price: 14.00,
         category: "Electricité marine",
         images: [
             "pic/51FSdUAuRrL.jpg",
