@@ -30,7 +30,7 @@ const products = [
     {
         id: 3,
         name: "projecteur 24V 100W",
-        price: 135.00,
+        price: 160.00,
         category: "Electricité marine",
         images: [
             
@@ -44,7 +44,7 @@ const products = [
     {
         id: 4,
         name: "projecteur 24V 50W",
-        price: 70.00,
+        price: 85.00,
         category: "Electricité marine",
         images: [
             "pic/Capture d'écran 2026-09-20 122120.png",
