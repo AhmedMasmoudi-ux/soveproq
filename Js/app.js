@@ -764,6 +764,7 @@ document.head.appendChild(style);
 
 // Update cart UI
 
+
 function updateCart() {
     // Save cart and update item count
     localStorage.setItem("shopCart", JSON.stringify(cart));
@@ -845,7 +846,6 @@ function updateCart() {
             delivery === 0 ? 'Gratuite' : `DT${delivery.toFixed(2)}`;
     }
 }
-
 
 
 // Remove item from cart
