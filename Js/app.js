@@ -847,15 +847,6 @@ function updateCart() {
 }
 
 
-    // Update totals
-    const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    cartSubtotal.textContent = `DT${subtotal.toFixed(2)}`;
-    cartTotal.textContent = `DT${subtotal.toFixed(2)}`;
-
-    // Update checkout modal totals
-    document.getElementById('checkout-subtotal').textContent = `DT${subtotal.toFixed(2)}`;
-    document.getElementById('checkout-total').textContent = `DT${subtotal.toFixed(2)}`;
-}
 
 // Remove item from cart
 function removeFromCart(productId) {
