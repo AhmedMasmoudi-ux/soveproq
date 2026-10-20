@@ -821,11 +821,19 @@ function updateCart() {
     const delivery = subtotal > 100 ? 0 : 9;
     const total = subtotal + delivery;
 
-    // Update cart totals
+    const subtotal = cart.reduce(
+        (sum, item) => sum + (Number(item.price) * item.quantity),
+        0
+    );
+
+    const delivery = subtotal > 100 ? 0 : 9;
+    const total = subtotal + delivery;
+
+    // Cart totals
     cartSubtotal.textContent = `DT${subtotal.toFixed(2)}`;
     cartTotal.textContent = `DT${total.toFixed(2)}`;
 
-    // Update checkout totals
+    // Checkout totals
     document.getElementById('checkout-subtotal').textContent =
         `DT${subtotal.toFixed(2)}`;
 
