@@ -764,12 +764,13 @@ document.head.appendChild(style);
 
 // Update cart UI
 
+
 function updateCart() {
     // Save cart and update item count
     localStorage.setItem("shopCart", JSON.stringify(cart));
 
     const totalItems = cart.reduce(
-        (sum, item) => sum + item.quantity,
+        (sum, item) => sum + Number(item.quantity),
         0
     );
 
@@ -791,7 +792,7 @@ function updateCart() {
                 <div class="ml-4 flex-1">
                     <h4 class="text-gray-800 font-medium">${item.name}</h4>
                     <p class="text-red-600 font-medium">
-                        ${item.price.toFixed(2)} DT
+                        ${Number(item.price).toFixed(2)} DT
                     </p>
                     <div class="flex items-center mt-2">
                         <button class="decrease-quantity px-2 py-1 border rounded-l"
@@ -813,19 +814,12 @@ function updateCart() {
 
     // Calculate subtotal
     const subtotal = cart.reduce(
-        (sum, item) => sum + item.price * item.quantity,
+        (sum, item) =>
+            sum + Number(item.price) * Number(item.quantity),
         0
     );
 
-    // Delivery is free only when subtotal is greater than 100 DT
-    const delivery = subtotal > 100 ? 0 : 9;
-    const total = subtotal + delivery;
-
-    const subtotal = cart.reduce(
-        (sum, item) => sum + (Number(item.price) * item.quantity),
-        0
-    );
-
+    // Delivery: free only when subtotal is greater than 100 DT
     const delivery = subtotal > 100 ? 0 : 9;
     const total = subtotal + delivery;
 
@@ -834,20 +828,30 @@ function updateCart() {
     cartTotal.textContent = `DT${total.toFixed(2)}`;
 
     // Checkout totals
-    document.getElementById('checkout-subtotal').textContent =
-        `DT${subtotal.toFixed(2)}`;
+    const checkoutSubtotal =
+        document.getElementById('checkout-subtotal');
+    const checkoutTotal =
+        document.getElementById('checkout-total');
 
-    document.getElementById('checkout-total').textContent =
-        `DT${total.toFixed(2)}`;
+    if (checkoutSubtotal) {
+        checkoutSubtotal.textContent = `DT${subtotal.toFixed(2)}`;
+    }
 
-    // Update delivery labels if these elements exist in your HTML
+    if (checkoutTotal) {
+        checkoutTotal.textContent = `DT${total.toFixed(2)}`;
+    }
+
+    // Cart delivery label
     const cartDelivery = document.getElementById('cart-delivery');
     if (cartDelivery) {
         cartDelivery.textContent =
             delivery === 0 ? 'Gratuite' : `DT${delivery.toFixed(2)}`;
     }
 
-    const checkoutDelivery = document.getElementById('checkout-delivery');
+    // Checkout delivery label
+    const checkoutDelivery =
+        document.getElementById('checkout-delivery');
+
     if (checkoutDelivery) {
         checkoutDelivery.textContent =
             delivery === 0 ? 'Gratuite' : `DT${delivery.toFixed(2)}`;
