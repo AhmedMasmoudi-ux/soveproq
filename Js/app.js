@@ -784,7 +784,7 @@ function updateCart() {
                         <img src="${item.images[0]}" alt="${item.name}" class="w-16 h-16 object-cover rounded">
                         <div class="ml-4 flex-1">
                             <h4 class="text-gray-800 font-medium">${item.name}</h4>
-                            <p class="text-red-600 font-medium">$${item.price.toFixed(2)}</p>
+                            <p class="text-red-600 font-medium">DT${item.price.toFixed(2)}</p>
                             <div class="flex items-center mt-2">
                                 <button class="decrease-quantity px-2 py-1 border border-gray-300 rounded-l hover:bg-gray-100 smooth-transition" data-id="${item.id}">
                                     <i class="fas fa-minus text-xs"></i>
@@ -802,14 +802,28 @@ function updateCart() {
                 `).join('');
     }
 
+
     // Update totals
-    const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    const subtotal = cart.reduce(
+        (sum, item) => sum + (item.price * item.quantity),
+        0
+    );
+
+    // Delivery fee: DT 9 if subtotal is less than DT 100
+    const deliveryFee = subtotal > 0 && subtotal < 100 ? 9 : 0;
+
+    const total = subtotal + deliveryFee;
+
     cartSubtotal.textContent = `DT${subtotal.toFixed(2)}`;
-    cartTotal.textContent = `DT${subtotal.toFixed(2)}`;
+    cartTotal.textContent = `DT${total.toFixed(2)}`;
 
     // Update checkout modal totals
-    document.getElementById('checkout-subtotal').textContent = `DT${subtotal.toFixed(2)}`;
-    document.getElementById('checkout-total').textContent = `DT${subtotal.toFixed(2)}`;
+    document.getElementById('checkout-subtotal').textContent =
+        `DT${subtotal.toFixed(2)}`;
+
+    document.getElementById('checkout-total').textContent =
+        `DT${total.toFixed(2)}`;
+
 }
 
 // Remove item from cart
@@ -1026,11 +1040,16 @@ async function sendOrderToGoogleSheets() {
     }
 
 
-    // Calculate order total
-    const total = cart.reduce(
+    // Calculate order subtotal
+    const subtotal = cart.reduce(
         (sum, item) => sum + (item.price * item.quantity),
         0
     );
+
+    // Add DT 9 delivery fee if subtotal is less than DT 100
+    const total = subtotal > 0 && subtotal < 100
+        ? subtotal + 9
+        : subtotal;
 
 
     // Prepare order data
