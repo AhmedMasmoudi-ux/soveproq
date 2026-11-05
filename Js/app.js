@@ -478,7 +478,7 @@ let currentQuickViewProduct = null;
 // GOOGLE SHEETS CONFIGURATION
 // ===============================
 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx9DNEpJr0C7iaDn07xZ6d1KgpwVNNgDBCcV7RlMKPqSR4-USa4MkOZ1qrcy23Edx8XMg/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyOcGvG6QPPCUH2pNCy8A99ysQQrygOxlwvlNDcEJQ2_cQJmwrBRYSV0vvkmsyceDnEHA/exec";
 
 // DOM elements
 const productsContainer = document.getElementById('products-container');
